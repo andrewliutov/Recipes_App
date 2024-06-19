@@ -18,6 +18,5 @@ from django.urls import path
 from calculator.views import calculate_recipe_view
 
 urlpatterns = [
-    # здесь зарегистрируйте вашу view-функцию
     path('<str:dish>/', calculate_recipe_view, name='calculate_recipe')
 ]
